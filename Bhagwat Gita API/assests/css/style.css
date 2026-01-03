@@ -1,0 +1,422 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #111;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff6f61;
+}
+
+.icon-item {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../images/hero/banner.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slider::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* ✅ COL-8 + CENTER PERFECT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.hero-title-hindi {
+  font-size: 3.8rem;
+  color: #c62828;
+  font-family: 'Noto Sans Devanagari', serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 0.5rem;
+}
+
+.hero-title-english {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-hero {
+  padding: 15px 38px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border-radius: 28px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-read {
+  background: linear-gradient(45deg, #ff6f61 0%, #ff8e78 100%);
+  color: white;
+}
+
+.btn-read:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 111, 97, 0.45);
+  color: white;
+}
+
+.btn-learn {
+  background: rgba(255, 255, 255, 0.92);
+  color: #444;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+.btn-learn:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  color: #444;
+}
+
+/* Add to your style.css for hover effect */
+.hover-shadow {
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.3) !important;
+  transform: translateY(-5px) !important;
+}
+
+/* --- SECOND IMAGE INSPIRED UI --- */
+
+.chapter-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb; /* Light grey border */
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.chapter-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    border-color: #d1d5db;
+}
+
+/* Chapter Label (e.g., Chapter 1) */
+.chapter-number {
+    color: #c96442; 
+    font-size: 1.0rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+/* Chapter Title */
+.chapter-name {
+    font-family: 'serif'; 
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+/* Description Text */
+.chapter-desc {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+/* Verse Info at Bottom */
+.verse-count {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    color: #6b7280;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.verse-count i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.faq-section {
+    background: linear-gradient(135deg, #fdfcfc 0%, #f9f8f6 100%);
+    padding: 5rem 0 3rem;
+    position: relative;
+}
+
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(218,165,32,0.4), transparent);
+}
+
+.faq-header {
+    max-width: 600px;
+    margin: 0 auto 4rem;
+}
+
+.faq-title {
+    background: linear-gradient(135deg, #DAA520 0%, #B8860B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.faq-subtitle {
+    color: #7C5130;
+    font-weight: 500;
+}
+
+.faq-accordion {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 10px 40px rgba(139, 69, 19, 0.06);
+}
+
+.faq-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(139, 69, 19, 0.12);
+}
+
+.faq-item:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.faq-button {
+    background: transparent !important;
+    border: none !important;
+    padding: 2.2rem 2.5rem !important;
+    font-size: 1.18rem !important;
+    font-weight: 600 !important;
+    color: #2D3748 !important;
+    box-shadow: none !important;
+    border-radius: 24px !important;
+    transition: all 0.4s ease !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-button:not(.collapsed) {
+    background: linear-gradient(135deg, #DAA520 0%, #B8860B 100%) !important;
+    color: white !important;
+    border-radius: 24px 24px 0 0 !important;
+    box-shadow: 0 15px 40px rgba(218, 165, 32, 0.3) !important;
+}
+
+.faq-button:focus {
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.faq-answer {
+    padding: 0 2.5rem 2.2rem !important;
+    color: #64748B;
+    font-size: 1.08rem;
+    line-height: 1.65;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0 0 24px 24px;
+    backdrop-filter: blur(15px);
+}
+
+.faq-answer strong {
+    color: #DAA520;
+}
+
+@media (max-width: 768px) {
+    .faq-button {
+        padding: 1.8rem 2rem !important;
+        font-size: 1.1rem !important;
+    }
+    
+    .faq-answer {
+        padding: 0 2rem 1.8rem !important;
+        font-size: 1rem;
+    }
+}
+
+.gita-footer {
+  background-color: #FBF9F4; /* Light cream background */
+  padding: 50px 8% 30px;
+  color: #5A5A5A;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Flexbox for 4-column layout */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Logo and Text side-by-side */
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+}
+
+.brand-text h3 {
+  font-family: 'Georgia', serif;
+  font-size: 1.6rem;
+  margin: 0;
+  color: #333;
+}
+
+.brand-text p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Column Headings */
+.footer-column h4 {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* List Styling */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #5A5A5A;
+  font-size: 0.95rem;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #5A5A5A;
+}
+
+/* Divider line */
+.footer-line {
+  border: 0;
+  border-top: 1px solid #EAE2D4;
+  margin-bottom: 25px;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.highlight {
+  color: #B55D38; /* Rust/Terracotta color */
+  font-weight: bold;
+}
+
+/* App Buttons */
+.app-badges {
+  display: flex;
+  gap: 15px;
+}
+
+.app-badges img {
+  height: 40px;
+  cursor: pointer;
+}

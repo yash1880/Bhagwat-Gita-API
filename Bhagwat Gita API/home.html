@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhagwat Gita</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar px-3 pb-3">
+      <div class="container-fluid">
+        <div class="row w-100 align-items-center">
+
+          <!-- LOGO (LEFT) -->
+          <div class="col-4 px-5 d-flex align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="./assests/images/logo/logo.webp" alt="logo" class="logo">
+            </a>
+            <h4>Bhagwat Gita</h4>
+          </div>
+
+          <!-- MENU (CENTER) -->
+          <div class="col-4 d-flex justify-content-center">
+            <ul class="navbar-nav flex-row gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="./chapter.html">Chapters<i class="bi bi-chevron-down ms-1"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Gita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gita AI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Donates</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- ICONS (RIGHT) -->
+          <div class="col-4 d-flex justify-content-end align-items-center gap-5">
+            <a href="#" class="text-dark text-decoration-none d-flex gap-1">
+              <i class="bi bi-search"></i>
+            </a>
+
+            <a href="#" class="text-dark text-decoration-none d-flex gap-1">
+              <i class="bi bi-moon"></i>
+            </a>
+
+            <button
+              style="background-color: #c96442; color: white; border: none; padding: 10px 19px; border-radius: 9px;"
+              class="btn position-relative p-2">
+              Sign In
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-slider">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-4 col-md-5 col-lg-5 text-center">
+            
+            <h2 class="hero-title-english">Bhagavad Gita in Hindi & English with Audio</h2>
+            <div class="hero-buttons">
+              <button class="btn-hero btn-read">Read Now →</button>
+              <button class="btn-hero btn-learn">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Chapter Section -->
+    <section class="chapter-section py-5 bg-light">
+      <div class="container my-5">
+        <div class="row">
+          <h6 class="mb-5 display-6 fw-bold text-dark"> Chapters</h6>
+          <div id="chapter-container" class="row g-4 justify-content-center">
+            Loading...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 my-5">
+      <div class="container">
+        <div class="faq-header text-center mb-5">
+          <h2 class="faq-title display-5 fw-bold mb-3">Frequently Asked Questions</h2>
+          <p class="faq-subtitle lead text-muted fs-5">Everything you need to know about the Bhagavad Gita</p>
+        </div>
+
+        <div class="accordion faq-accordion" id="gitaFaq">
+          <!-- Question 1 -->
+          <div class="accordion-item faq-item rounded-4 shadow-sm border-0 mb-4 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faq1">
+                How many chapters are in the Bhagavad Gita?
+              </button>
+            </h3>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#gitaFaq">
+              <div class="accordion-body faq-answer">
+                The Bhagavad Gita contains <strong>18 chapters</strong> with a total of <strong>700 shlokas</strong>.
+                It is part of the Indian epic Mahabharata and presents a conversation between Lord Krishna and Arjuna
+                on the battlefield of Kurukshetra.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="accordion-item faq-item rounded-4 shadow-sm border-0 mb-4 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faq2">
+                Who wrote the Bhagavad Gita?
+              </button>
+            </h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#gitaFaq">
+              <div class="accordion-body faq-answer">
+                The Bhagavad Gita is considered a <strong>celestial song</strong> revealed by Lord Krishna to Arjuna.
+                It was composed by Sage <strong>Vyasa</strong> as part of the Mahabharata epic.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="accordion-item faq-item rounded-4 shadow-sm border-0 mb-4 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faq3">
+                What are the benefits of reading the Bhagavad Gita?
+              </button>
+            </h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#gitaFaq">
+              <div class="accordion-body faq-answer">
+                Reading Bhagavad Gita provides <strong>mental clarity</strong>, <strong>stress reduction</strong>,
+                <strong>better decision-making</strong>, and <strong>spiritual growth</strong>. It teaches Karma Yoga,
+                Bhakti Yoga, and Jnana Yoga for balanced living.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="accordion-item faq-item rounded-4 shadow-sm border-0 mb-4 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faq4">
+                Is the Bhagavad Gita available with commentaries?
+              </button>
+            </h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#gitaFaq">
+              <div class="accordion-body faq-answer">
+                Yes! Famous commentaries include <strong>Shankaracharya's</strong>, <strong>Ramanujacharya's</strong>,
+                and modern ones by <strong>Swami Sivananda</strong> and <strong>A.C. Bhaktivedanta Swami
+                  Prabhupada</strong>.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="accordion-item faq-item rounded-4 shadow-sm border-0 mb-4 overflow-hidden">
+            <h3 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faq5">
+                Can I read Bhagavad Gita in Hindi and English?
+              </button>
+            </h3>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#gitaFaq">
+              <div class="accordion-body faq-answer">
+                Absolutely! Available in <strong>Hindi, English, Sanskrit</strong> with transliteration and
+                word-for-word
+                translations. Dual-language editions make it accessible for all readers.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="accordion-item faq-item rounded-4 shadow-sm border-0 mb-3">
+            <h3 class="accordion-header">
+              <button class="accordion-button faq-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#faq6">
+                What are the different yogas explained in Bhagavad Gita?
+              </button>
+            </h3>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#gitaFaq">
+              <div class="accordion-body faq-answer">
+                Bhagavad Gita explains four main paths:<br>
+                <strong>• Karma Yoga</strong> (Path of Action)<br>
+                <strong>• Bhakti Yoga</strong> (Path of Devotion)<br>
+                <strong>• Jnana Yoga</strong> (Path of Knowledge)<br>
+                <strong>• Dhyana Yoga</strong> (Path of Meditation)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <footer class="gita-footer">
+  <div class="footer-top">
+    <div class="footer-column brand-section">
+      <div class="logo-group">
+        <img src="./assests/images/logo/logo.webp" alt="Gita Logo" class="footer-logo">
+        <div class="brand-text">
+          <h3>Bhagavad Gita</h3>
+          <p>Ancient wisdom for modern life</p>
+        </div>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h4>QUICK LINKS</h4>
+      <ul>
+        <li><a href="#">Mobile App</a></li>
+        <li><a href="#">Gita AI</a></li>
+        <li><a href="#">Quotes</a></li>
+        <li><a href="#">Donate</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>RESOURCES</h4>
+      <ul>
+        <li><a href="#">About Gita</a></li>
+        <li><a href="#">Characters</a></li>
+        <li><a href="#">Acknowledgements</a></li>
+        <li><a href="#">API</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>LEGAL & CONTACT</h4>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="footer-line">
+
+  <div class="footer-bottom">
+    <p>© 2026 Copyright: <span class="highlight">Ved Vyas Foundation.</span> All rights reserved.</p>
+    <div class="app-badges">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+    </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assests/js/script.js"></script>
+</body>
+
+</html>
